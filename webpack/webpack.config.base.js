@@ -1,13 +1,13 @@
 const { resolve } = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+console.log(__dirname)
 module.exports = {
     entry: {
         index: resolve('./src/index')
     },
     output: {
-        path: resolve(__dirname, 'dist'),
+        path: resolve(__dirname, '../dist'),
         filename: 'js/[name].bundle.[contenthash:8].js',
         chunkFilename: 'js/[name].chunk.[contenthash].js'
     },

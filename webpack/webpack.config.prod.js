@@ -26,16 +26,7 @@ module.exports = merge(base, {
                     'css-loader',
                     ...commonPostCssLoader
                 ]
-            },
-            {
-                test: /\.less$/i,
-                use: [
-                    'style-loader',
-                    'css-loader',
-                    ...commonPostCssLoader,
-                    'less-loader'
-                ],
-            },
+            }
         ]
     },
     devtool: false,
